@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <div class="hero">
+         <div class="nav-bar">
+             <div class="nav-logo">
+                 <img src="logo.jpg">
+             </div>
+             <div class ="nav-link" id="nav-link">
+                 <i class="fa fa-close" onclick="closeMenu()"></i>
+
+                 <ul>
+                     <a href="/index.html"><li>HOME</li></a>
+                     <a href="/index.html"><li>ABOUT</li></a>
+                     <a href="/index.html"><li>SERVICE</li></a>
+                     <a href="/contact.html"><li>CONTACT</li></a>
+                 </ul>
+                 <button type="button" class="btn">SIGN UP</button>
+             </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+
+         </div>
+         <div class="banner-title">
+            <h1>Matching style  <span>and class<br> with luxury</span>and comfort.</h1>
+            <button type="button" class="btn">EXPLORE</button>
+         </div>  
+         </div>
+     </div>
+     <script>
+      var show = document.getElementById("nav-link");
+      function showMenu(){
+          show.style.right = "0";
+      }
+      function closeMenu(){
+          show.style.right = "-200px";
+      }
+     </script>
+</body>
+</html>  
